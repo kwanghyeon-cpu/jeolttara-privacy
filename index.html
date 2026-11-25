@@ -20,15 +20,16 @@
 <body>
 <main>
 <h1>절따라 개인정보처리방침</h1>
-<p class="muted">시행일: 2026년 11월 20일(1.1 버전)</p>
+<p class="muted">시행일: 2026년 11월 25일(1.2 버전)</p>
 <nav class="muted"><a href="#en">English</a></nav>
 
-<p>절따라(이하 "앱")는 전국 사찰과 그 절로 이어지는 걷기 코스를 지도에서 보여주는 앱입니다. 앱은 「개인정보 보호법」을 지키며, 회원가입이 없고, 사용자의 위치를 사용하지 않습니다.</p>
+<p>절따라(이하 "앱")는 전국 사찰과 그 절로 이어지는 걷기 코스를 지도에서 보여주는 앱입니다. 앱은 「개인정보 보호법」을 지키며, 회원가입이 없습니다. 위치는 사용자가 [내 주변]을 누를 때만 기기 안에서 거리 계산에 쓰고, 저장하거나 보내지 않습니다.</p>
 
 <h2>1. 처리하는 정보</h2>
 <ul>
-  <li><strong>다녀온 사찰 기록</strong>: 사용자가 [다녀왔어요]를 누른 사찰의 목록을 기기 안에만 저장합니다. 이 기록은 외부로 보내지 않습니다.</li>
-  <li><strong>위치 정보</strong>: 앱은 위치 권한을 요청하지 않으며, 기기의 위치를 읽지 않습니다.</li>
+  <li><strong>다녀온 사찰 기록</strong>: 사용자가 [다녀왔어요]를 누른 사찰의 목록과, 사용자가 직접 남긴 다녀온 날짜·메모·사진(사용자가 고른 사진을 줄인 사본)을 기기 안에만 저장합니다. 이 기록은 외부로 보내지 않습니다. 안드로이드 기기 백업을 켜 두었다면 기기 백업(사용자의 Google 계정)에 함께 포함될 수 있습니다.</li>
+  <li><strong>위치 정보</strong>(1.2 버전부터): 목록의 [내 주변]이나 지도의 [내 위치]를 누를 때만 대략적인 위치(ACCESS_COARSE_LOCATION) 권한을 요청합니다. 받은 위치는 그 화면에서 사찰까지의 거리를 계산하고 지도를 옮기는 데만 쓰며, 기기에 저장하거나 개발자·광고 SDK 등 외부로 보내지 않습니다. 권한은 휴대전화 설정에서 언제든 끌 수 있습니다.</li>
+  <li><strong>기록 내보내기·가져오기</strong>: 사용자가 [기록 내보내기]를 누르면 기록과 사진을 사용자가 고른 위치에 파일로 저장합니다. 개발자는 이 파일을 받지 않습니다.</li>
 </ul>
 <p>앱은 이름, 전화번호, 이메일을 수집하지 않습니다. 이용 분석 도구는 쓰지 않습니다.</p>
 <p><strong>광고</strong>: 앱 화면 아래에 Google AdMob 배너 광고가 나옵니다. 광고를 보여주고 부정 클릭을 막기 위해 Google이 광고 식별자, IP 주소, 기기·앱 정보를 수집할 수 있으며, 이는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에 따라 처리됩니다. 앱은 다녀온 사찰 기록을 광고에 쓰거나 Google에 보내지 않습니다. 유럽 등 동의가 필요한 지역에서는 광고 전에 Google 동의 창이 뜨며, 나중에 순례 → ⓘ 앱 정보 → 광고 개인정보 설정에서 바꿀 수 있습니다. 맞춤 광고는 휴대전화 설정 &gt; Google &gt; 광고에서 끄거나 광고 ID를 삭제할 수 있습니다.</p>
@@ -39,11 +40,12 @@
   <li>사찰 사진은 한국관광공사 서버(tong.visitkorea.or.kr)에서 화면에 보일 때 불러옵니다. 이때 기기의 IP 주소가 한국관광공사 서버에 전달됩니다.</li>
   <li>사찰 정보와 걷기 코스 경로는 앱 안에 들어 있으며, 이를 보기 위해 따로 서버에 요청하지 않습니다.</li>
   <li>[문의하기]를 누르면 사용자의 메일 앱이 열리며, 사용자가 직접 보낸 메일만 개발자에게 전달됩니다.</li>
+  <li>[길찾기], [공유], [템플스테이]를 누르면 사용자가 고른 지도 앱·공유 앱·웹 브라우저가 열리고 사찰의 이름·좌표·페이지 주소가 그 앱에 전달됩니다. 이후는 각 앱의 방침을 따릅니다.</li>
 </ul>
 <p>개발자는 개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다(광고 SDK, 지도 서버, 사진 서버가 처리하는 정보는 위 내용 참고).</p>
 
 <h2>3. 보관 기간과 삭제</h2>
-<p>다녀온 사찰 기록은 사용자가 지울 때까지 기기에 보관됩니다. 사찰 화면에서 [다녀왔어요]를 다시 누르면 하나씩 지워지고, 앱을 삭제하거나 휴대전화 설정에서 앱 데이터를 지우면 모두 삭제됩니다. 개발자는 기록을 가지고 있지 않으므로 따로 삭제를 요청할 필요가 없습니다.</p>
+<p>다녀온 사찰 기록(날짜·메모·사진 포함)은 사용자가 지울 때까지 기기에 보관됩니다. 사찰 화면의 [다녀왔어요] 카드에서 [취소]를 누르면 하나씩 지워지고, 앱을 삭제하거나 휴대전화 설정에서 앱 데이터를 지우면 모두 삭제됩니다. 개발자는 기록을 가지고 있지 않으므로 따로 삭제를 요청할 필요가 없습니다.</p>
 
 <h2>4. 아동의 개인정보</h2>
 <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 정보를 따로 수집하지 않습니다.</p>
@@ -59,14 +61,15 @@
 <hr>
 
 <h1 id="en">Jeolttara Privacy Policy</h1>
-<p class="muted">Effective: November 20, 2026 (version 1.1)</p>
+<p class="muted">Effective: November 25, 2026 (version 1.2)</p>
 
-<p>Jeolttara ("the app") shows Korean Buddhist temples and the walking trails leading to them on a map. There is no account, and the app does not use your location.</p>
+<p>Jeolttara ("the app") shows Korean Buddhist temples and the walking trails leading to them on a map. There is no account. Your location is used on the device only when you tap "Nearby", to measure distances; it is never stored or sent.</p>
 
 <h2>1. Information the app handles</h2>
 <ul>
-  <li><strong>Visited temples</strong>: the list of temples you mark with "Visited" is stored only on your device and is never sent anywhere.</li>
-  <li><strong>Location</strong>: the app does not request location permission and does not read your device's location.</li>
+  <li><strong>Visited temples</strong>: the temples you mark as visited, and the date, note and photo (a reduced copy of a photo you pick) you add, are stored only on your device and never sent anywhere. If Android device backup is on, they may be included in your device backup (your Google account).</li>
+  <li><strong>Location</strong> (from version 1.2): the app asks for approximate location (ACCESS_COARSE_LOCATION) only when you tap "Nearby" in the list or "My location" on the map. It is used only to measure distances to temples and move the map on that screen, and is never stored or sent to the developer, the ad SDK or anyone else. You can revoke the permission in your phone's settings at any time.</li>
+  <li><strong>Export / import</strong>: "Export records" saves your records and photos to a file at a location you choose. The developer never receives it.</li>
 </ul>
 <p>The app does not collect your name, phone number or email, and uses no analytics tools.</p>
 <p><strong>Ads</strong>: a Google AdMob banner appears at the bottom of the screen. To show ads and prevent fraud, Google may collect the advertising ID, IP address and device/app information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app never uses or sends your visited-temple list for ads. Where consent is required (e.g. the EU), Google's consent form appears first; you can change it later in Pilgrimage → ⓘ About → Ad privacy settings. You can turn off personalized ads or delete your advertising ID in your phone's Settings &gt; Google &gt; Ads.</p>
@@ -77,11 +80,12 @@
   <li>Temple photos are loaded from the Korea Tourism Organization server (tong.visitkorea.or.kr) when shown, which receives your IP address.</li>
   <li>Temple information and trail routes are bundled in the app; no server is contacted to view them.</li>
   <li>Tapping Contact opens your email app; only emails you send yourself reach the developer.</li>
+  <li>Tapping Directions, Share or Templestay opens the map app, sharing app or browser you choose and passes it the temple's name, coordinates or page address; that app's own policy then applies.</li>
 </ul>
 <p>The developer does not share personal data with or outsource it to third parties (for data handled by the ad SDK, map server and photo server, see above).</p>
 
 <h2>3. Retention and deletion</h2>
-<p>Your visited-temple list is kept until you delete it. Tap "Visited" again on a temple to remove it, or uninstall the app or clear its data in your phone's settings to remove everything. The developer holds no copy.</p>
+<p>Your visited-temple list is kept until you delete it. Tap "Undo" on a temple's visit card to remove it, or uninstall the app or clear its data in your phone's settings to remove everything. The developer holds no copy.</p>
 
 <h2>4. Children</h2>
 <p>The app is not directed at children under 14 and does not knowingly collect their information.</p>
